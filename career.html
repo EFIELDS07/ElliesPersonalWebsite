@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ellie Fields | Career</title>
+<link rel="stylesheet" href="css/style.css" />
+
+<style>
+body {
+  
+  color: #333;
+  background-color: #fff8fb; /* subtle pink */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #6b1636;
+  text-align: center;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+
+
+.theme-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.05rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff9bb8 0%, #ffc7dd 100%);
+  color: #6b1636;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 12px 36px rgba(234, 86, 143, 0.12);
+  transition: transform 220ms, box-shadow 220ms;
+  border: 1px solid rgba(255,255,255,0.6);
+  font-size: 1rem;
+}
+
+.theme-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(234,86,143,0.16);
+}
+
+.career-container {
+  display: flex;
+  flex-direction: column;   /* ← forces vertical stacking */
+  align-items: center;      /* ← centers the cards */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.career-card {
+  background: #fff;
+  width: 600px;   /* ← increased from 300px */
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+}
+
+
+.career-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.career-card h3 {
+  margin-top: 0;
+  color: #6b1636;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.career-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  font-size: 0.95rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.career-card.expanded .career-details {
+  max-height: 500px;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Tap hint */
+.tap-hint {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .career-card { width: 80%; }
+}
+</style>
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="discover.html">Discover UMD</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="game.html">Game</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Career Goals</h1>
+  <p style="max-width:700px; margin:0 auto;">
+    Click on each card to see more details about why I want to work there and my qualifications.
+  </p>
+
+  <div class="career-container">
+    <div class="career-card" tabindex="0">
+      <h3>Company 1: UnitedHealth Group / Optum </h3>
+      <p class="contact-info">
+        Contact Info:<br>
+        9900 Bren Road East, Minnetonka, MN 55343<br>
+        Phone: (800) 328-5979<br>
+        Website: <a href="https://www.unitedhealthgroup.com" target="_blank">unitedhealthgroup.com</a><br>
+      </p>
+      <div class="tap-hint">↕ Tap to expand</div>
+      <div class="career-details">
+        <p><strong>Why interested:</strong> UnitedHealth Group offers a huge platform to grow in finance within healthcare, specifically through its Optum division. The Financial Consultant role at Optum’s Health Risk business (located in Minnetonka) is especially attractive to me because it involves financial modeling, strategic analysis, and working on value-based care — areas that align with my long-term goal of combining finance with socially meaningful work.</p>
+        <p><strong>Qualifications:</strong></p>
+<ul>
+  <li>Built strong skills in financial analysis, Excel modeling, and forecasting through coursework and projects.</li>
+  <li>Experience evaluating business units’ financial performance through class projects and internships.</li>
+  <li>Analytically driven and detail-oriented, able to translate data into actionable insights.</li>
+  <li>Passionate about combining finance with socially meaningful work.</li>
+</ul>
+      </div>
+    </div>
+
+    <div class="career-card" tabindex="0">
+      <h3>Company 2: U.S. Bank (U.S. Bancorp)</h3>
+      <p class="contact-info">
+        Contact Info:<br>
+        800 Nicollet Mall, Minneapolis, MN 55402<br>
+        Phone: 651-466-3000<br>
+        Website: <a href="https://www.usbank.com" target="_blank">usbank.com</a><br>
+      </p>
+      <div class="tap-hint">↕ Tap to expand</div>
+      <div class="career-details">
+        <p><strong>Why interested:</strong> I'm interested in roles like commercial or credit analyst, where I can assess businesses’ financials, understand risk, and help support lending decisions.</p>
+        <p><strong>Qualifications:</strong></p>
+<ul>
+  <li>Strong ability to read and interpret financial statements.</li>
+  <li>Experience building risk-assessment models and conducting sensitivity analyses.</li>
+  <li>Detail-oriented and effective at communicating financial insights to stakeholders.</li>
+  <li>Comfortable working with both spreadsheets and business teams.</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:2.5rem;">
+    <a href="index.html" class="theme-button">← Back to Home</a>
+  </div>
+</main>
+
+<script>
+document.querySelectorAll('.career-card').forEach(card => {
+  card.addEventListener('click', e => {
+    // Only expand the clicked card
+    card.classList.toggle('expanded');
+  });
+
+  card.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      card.classList.toggle('expanded');
+    }
+  });
+});
+</script>
+</body>
+</html>
